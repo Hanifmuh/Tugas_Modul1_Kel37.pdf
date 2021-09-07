@@ -19,5 +19,6 @@ function solve() {
     removeZero()
     var equation = document.getElementById("output").innerHTML;
     var solved = eval(equation);
-    document.getElementById('output').innerHTML = solved;
+    var tipe = (solved % 2 == 0) ? " adalah bil.genap" : " adalah bil.ganjil";
+    document.getElementById('output').innerHTML = solved + tipe;
 }
